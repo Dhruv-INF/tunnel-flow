@@ -7,34 +7,26 @@ const steps = [
   {
     number: "01",
     title: "Install CLI",
-    description: "Download our lightweight CLI tool with a single command",
-    command: "npm install -g tunnel-flow",
+    description: "Download our simple CLI tool",
+    command: "npm install -g tunnel",
     icon: Download,
-    color: "terminal-green"
-  },
-  {
-    number: "02", 
-    title: "Connect Tunnel",
-    description: "Expose your local port with enterprise-grade security",
-    command: "tunnel connect 3000 --auth token",
-    icon: Zap,
     color: "primary"
   },
   {
-    number: "03",
-    title: "Get HTTPS URL",
-    description: "Receive your persistent custom subdomain instantly",
-    command: "✓ https://yourname.tunnel-flow.dev",
-    icon: Globe,
-    color: "neon-cyan"
+    number: "02", 
+    title: "Start Tunnel",
+    description: "Run one command to expose your local app",
+    command: "tunnel start 3000",
+    icon: Zap,
+    color: "terminal-green"
   },
   {
-    number: "04",
-    title: "Monitor & Scale",
-    description: "Track analytics and handle traffic spikes automatically",
-    command: "tunnel dashboard --live",
-    icon: BarChart,
-    color: "cyber-purple"
+    number: "03",
+    title: "Share URL",
+    description: "Copy and share your public URL instantly",
+    command: "✓ https://abc123.tunnel.dev",
+    icon: Globe,
+    color: "neon-cyan"
   }
 ];
 
@@ -50,16 +42,15 @@ const HowItWorks = () => {
           </Badge>
           
           <h2 className="text-4xl lg:text-5xl font-bold">
-            From localhost to{" "}
+            Share your{" "}
             <span className="bg-gradient-accent bg-clip-text text-transparent">
-              production
+              localhost
             </span>{" "}
-            in seconds
+            in 3 steps
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our streamlined workflow gets you from local development to secure 
-            public access in under 30 seconds.
+            Simple tunnel setup to share your local development with anyone.
           </p>
         </div>
 

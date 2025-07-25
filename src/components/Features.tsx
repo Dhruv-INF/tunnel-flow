@@ -14,59 +14,24 @@ import {
 const features = [
   {
     icon: Zap,
-    title: "One-Command Setup",
-    description: "Connect any local port to HTTPS with a single CLI command. No configuration required.",
-    badge: "Instant",
-    color: "terminal-green"
-  },
-  {
-    icon: Shield,
-    title: "Enterprise Security",
-    description: "Token-based authentication, password protection, and end-to-end encryption.",
-    badge: "Secure",
+    title: "One Command Start",
+    description: "Run 'tunnel start 3000' and instantly get a public HTTPS URL for your local app.",
+    badge: "Simple",
     color: "primary"
   },
   {
     icon: Globe,
-    title: "Persistent URLs",
-    description: "Keep the same custom subdomain across sessions. Your tunnel, your URL.",
-    badge: "Persistent",
-    color: "neon-cyan"
-  },
-  {
-    icon: BarChart3,
-    title: "Real-time Analytics",
-    description: "Monitor requests, latency, errors, and traffic patterns with detailed insights.",
-    badge: "Analytics",
-    color: "cyber-purple"
-  },
-  {
-    icon: Layers,
-    title: "Auto-scaling Proxy",
-    description: "Handle traffic spikes automatically with our distributed proxy network.",
-    badge: "Scalable",
+    title: "Share Instantly", 
+    description: "Share your localhost with anyone using a secure public URL.",
+    badge: "Share",
     color: "terminal-green"
   },
   {
-    icon: RefreshCw,
-    title: "Webhook Replay",
-    description: "Capture and replay webhook requests for debugging and testing workflows.",
-    badge: "Debug",
-    color: "primary"
-  },
-  {
-    icon: Monitor,
-    title: "Cross-Platform CLI",
-    description: "Native binaries for Windows, macOS, and Linux. Perfect for CI/CD pipelines.",
-    badge: "Universal",
+    icon: BarChart3,
+    title: "Visitor Tracking",
+    description: "See who visits your tunnel with basic analytics and visitor logs.",
+    badge: "Track",
     color: "neon-cyan"
-  },
-  {
-    icon: Webhook,
-    title: "API Integration",
-    description: "Programmatic tunnel management with comprehensive REST API and webhooks.",
-    badge: "API-First",
-    color: "cyber-purple"
   }
 ];
 
@@ -84,20 +49,19 @@ const Features = () => {
           </Badge>
           
           <h2 className="text-4xl lg:text-5xl font-bold">
-            Everything you need for{" "}
+            Simple{" "}
             <span className="bg-gradient-accent bg-clip-text text-transparent">
-              secure tunneling
+              localhost sharing
             </span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From instant setup to enterprise-grade security, our platform provides 
-            all the tools developers need for reliable local-to-web connectivity.
+            Three core features to instantly share your local development with the world.
           </p>
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (

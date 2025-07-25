@@ -5,17 +5,16 @@ import { Check, Zap, Crown, Rocket } from "lucide-react";
 
 const plans = [
   {
-    name: "Developer",
+    name: "Free",
     icon: Zap,
     price: "Free",
-    description: "Perfect for personal projects and learning",
+    description: "Perfect for trying out tunnel sharing",
     color: "terminal-green",
     features: [
-      "5 concurrent tunnels",
-      "Basic analytics",
+      "1 tunnel at a time",
+      "Basic visitor logs",
       "Community support",
-      "HTTPS tunnels",
-      "Basic auth protection"
+      "HTTPS tunnels"
     ],
     cta: "Start Free",
     popular: false
@@ -23,39 +22,18 @@ const plans = [
   {
     name: "Pro",
     icon: Crown,
-    price: "$19",
+    price: "$5",
     period: "/month",
-    description: "For professional developers and small teams",
+    description: "For regular tunnel sharing",
     color: "primary",
     features: [
-      "50 concurrent tunnels",
-      "Advanced analytics",
-      "Priority support",
-      "Custom subdomains", 
-      "Webhook replay",
-      "API access",
-      "Team collaboration"
+      "5 tunnels at a time",
+      "Detailed visitor analytics",
+      "Email support",
+      "Custom subdomains"
     ],
-    cta: "Start Pro Trial",
+    cta: "Upgrade to Pro",
     popular: true
-  },
-  {
-    name: "Enterprise",
-    icon: Rocket,
-    price: "Custom",
-    description: "Scalable solutions for large organizations",
-    color: "cyber-purple",
-    features: [
-      "Unlimited tunnels",
-      "Advanced security",
-      "24/7 dedicated support",
-      "On-premise deployment",
-      "SLA guarantees",
-      "SSO integration",
-      "Custom integrations"
-    ],
-    cta: "Contact Sales",
-    popular: false
   }
 ];
 
@@ -87,7 +65,7 @@ const Pricing = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {plans.map((plan, index) => {
             const Icon = plan.icon;
             return (

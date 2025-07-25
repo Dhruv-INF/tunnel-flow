@@ -22,17 +22,16 @@ const Hero = () => {
             
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Secure{" "}
+                Share your{" "}
                 <span className="bg-gradient-accent bg-clip-text text-transparent">
-                  Tunnel Flow
+                  localhost
                 </span>{" "}
-                for Developers
+                instantly
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Expose your localhost to the world with enterprise-grade security, 
-                persistent URLs, and real-time analytics. The only tunneling solution 
-                you'll ever need.
+                Simple tunnel tool to share your local development with anyone. 
+                One command, instant public URL.
               </p>
             </div>
 
@@ -47,9 +46,9 @@ const Hero = () => {
                 <span className="text-muted-foreground text-sm">tunnel-flow</span>
               </div>
               <div className="space-y-2 text-sm">
-                <div className="text-muted-foreground">$ npm install -g tunnel-flow</div>
-                <div className="text-terminal-green">$ tunnel connect 3000</div>
-                <div className="text-neon-cyan">✓ Tunnel active: https://arjun.tunnel-flow.dev</div>
+                <div className="text-muted-foreground">$ npm install -g tunnel</div>
+                <div className="text-terminal-green">$ tunnel start 3000</div>
+                <div className="text-neon-cyan">✓ https://abc123.tunnel.dev</div>
               </div>
             </div>
 
